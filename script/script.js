@@ -31,8 +31,10 @@ function setColor(squareElement) {
 }
 
 function removeColor(squareElement) {
-    squareElement.style.backgroundColor = '#1d1d1d';
-    squareElement.style.boxShadow = '0 0 2px #1d1d1d';
+    setTimeout(() => {
+        squareElement.style.backgroundColor = '#1d1d1d';
+        squareElement.style.boxShadow = '0 0 2px #000';
+    }, 1000);
 }
 
 function getRandomColor() {
